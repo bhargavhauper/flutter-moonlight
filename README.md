@@ -23,6 +23,7 @@ This Docs given Flutter easy implement Flutter Project
 - Grid Layout
 - Load local image
 - Load local json
+- Snack Bar (Toast Message)
 - Load More Data Using API## Documentation
 
 ## Documentation

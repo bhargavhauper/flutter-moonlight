@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:moonlight/config/app_routes.dart';
 import 'config/config.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
@@ -34,7 +33,7 @@ class MyApp extends StatelessWidget {
             themeMode: currentMode,
             // initialRoute: rootRoute,
             // onGenerateRoute: Routes.generateRoute,
-            initialRoute: '/',
+            initialRoute: App.home,
             routes: Routes().routes,
             // home: const RegisterScreen(),
           );
