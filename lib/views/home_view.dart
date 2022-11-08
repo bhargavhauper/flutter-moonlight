@@ -1,8 +1,51 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import '../config/config.dart';
 import '../utils/tools.dart';
 import '../widgets/widget.dart';
 
+class HomeView extends StatefulWidget {
+  
+  @override
+  State<HomeView> createState() => _HomeViewState();
+}
+
+class _HomeViewState extends State<HomeView> {
+  final FlutterTts tts = FlutterTts();
+
+  final TextEditingController controller =
+      TextEditingController(text: 'Hello world');
+
+  speck(String text) async {
+    inspect(text);
+    await tts.setLanguage('en');
+    await tts.setSpeechRate(0.4);
+    await tts.setPitch(1.0);
+    await tts.speak(text);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          TextField(
+            controller: controller,
+          ),
+          ElevatedButton(
+              onPressed: () {
+                speck(controller.text);
+              },
+              child: const Text('Speak'))
+        ],
+      ),
+    );
+  }
+}
+/*
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
 
@@ -45,3 +88,4 @@ class HomeView extends StatelessWidget {
     );
   }
 }
+*/
