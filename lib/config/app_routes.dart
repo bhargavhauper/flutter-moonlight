@@ -26,6 +26,7 @@ class App extends RouteManager {
   static const String exampleInputFields = "/input-fields-example";
   static const String exampleUsingAlertDialog = "/using-alert-dialog-example";
   static const String exampleUsingBottomNavBar = "/using-bottom-nav-bar";
+  static const String exampleTextSpeechView = "/text-to-speech";
   static const String exampleSnackBar = "/snack-bar";
   static const String exampleCheckInternetConnection =
       "/check-internet-connection";
@@ -46,6 +47,7 @@ class App extends RouteManager {
     addRoute(App.exampleInputFields, (context) => const InputFieldsExample());
     addRoute(
         App.exampleUsingAlertDialog, (context) => const UsingAlertDialogView());
+    addRoute(App.exampleTextSpeechView, (context) => const TextSpeechView());
     addRoute(App.exampleSnackBar, (context) => const SnackBarView());
     addRoute(
         App.exampleUsingBottomNavBar, (context) => UsingBottomNavBarView());

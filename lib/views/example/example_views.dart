@@ -9,3 +9,4 @@ export 'using_alert_dialog.dart';
 export 'using_bottom_nav_bar.dart';
 export 'snackbar_view.dart';
 export 'check_internet_connection.dart';
+export 'text_speech.dart';

@@ -21,6 +21,12 @@ class ExampleView extends StatelessWidget {
               },
             ),
             ListTile(
+              title: Center(child: Text("Text to Speech")),
+              onTap: () {
+                Navigator.pushNamed(context, App.exampleTextSpeechView);
+              },
+            ),
+            ListTile(
               title: Center(child: Text("Grid View")),
               onTap: () {
                 Navigator.pushNamed(context, App.exampleGridView);

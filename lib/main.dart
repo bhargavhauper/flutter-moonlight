@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:moonlight/config/app_routes.dart';
 import 'config/config.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
