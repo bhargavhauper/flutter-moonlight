@@ -24,6 +24,9 @@ class _TextSpeechViewState extends State<TextSpeechView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Text to Speech"),
+      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
